@@ -1,7 +1,6 @@
 {
   "name": "kompetenz-tracker",
   "homepage": "https://nnbiech95-cpu.github.io/Beratung",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
