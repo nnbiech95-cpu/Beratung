@@ -7,213 +7,214 @@ export const demoProfile: UserProfile = {
   ratings: {
     'c1-1': {
       competenceId: 'c1-1',
-      level: 8,
-      note: 'Beleg: 📄 Verlaufsplan\n\nExemplarische Feinplanung einer Unterrichtseinheit (BGY 25a) unter Berücksichtigung curricularer Vorgaben (LF 2).',
+      level: 9,
+      note: 'Beleg: 📄 Jahresplan\n\nCurriculare Langfristplanung für die Jahrgangsstufe 11 (BWL) liegt vor und strukturiert das Schuljahr.',
       isPriority: false
     },
     'c1-2': {
       competenceId: 'c1-2',
       level: 9,
-      note: 'Beleg: 💻 Bilanz-App\n\nEntwicklung innovativer OER-Lernsoftware (React/Vite) zur didaktischen Modernisierung des Rechnungswesens.',
+      note: 'Beleg: 💻 Bilanz-App\n\nEntwicklung eigener OER-Lernsoftware (React) zur didaktischen Modernisierung des Rechnungswesens.',
       isPriority: true
     },
     'c1-3': {
       competenceId: 'c1-3',
       level: 8,
-      note: 'Beleg: 💻 ESP32-App\n\nBereitstellung barrierefreier, responsiver Lernanwendungen (Green IT), die technische Hürden im Unterricht minimieren.',
+      note: 'Beleg: 💻 ESP32-App\n\nBereitstellung barrierefreier Web-Anwendungen, die auch auf privater Schülerhardware (BYOD) funktionieren.',
       isPriority: false
     },
     'c1-4': {
       competenceId: 'c1-4',
       level: 8,
-      note: 'Beleg: 💻 ESP32-App\n\nPräventive Sicherheitserziehung: Digitale Simulation von Gefahren (Kurzschluss) VOR der realen Arbeit (Unfallverhütung).',
+      note: 'Beleg: 🗣️ Reflexion\n\nBewusster Verzicht auf schriftliche Protokolle bei Kollegengesprächen aus Datenschutzgründen (Datensparsamkeit). Beachtung von Urheberrecht bei erstellten Visualisierungen.',
       isPriority: false
     },
     'c1-5': {
       competenceId: 'c1-5',
       level: 7,
-      note: 'Beleg: 📄 Verlaufsplan\n\nSchriftliche Reflexion (siehe Fußzeile Verlaufsplan): Kritische Auseinandersetzung mit dem eigenen Zeitmanagement und Schülerfeedback.',
+      note: 'Beleg: 💻 Lehrstil-Modell\n\nReflexion der Schülerperspektive: Wie wirkt mein Führungsstil auf die Selbstständigkeit der Lernenden?',
       isPriority: false
     },
     'c1-6': {
       competenceId: 'c1-6',
       level: 8,
-      note: 'Beleg: 💻 Lehrstil-Tool\n\nEvidenzbasierte Reflexion der eigenen Lehrerrolle (Autorität vs. Demokratie) auf Basis von Hattie & Baumrind.',
+      note: 'Beleg: 💻 Lehrstil-Modell\n\nTheoretische Auseinandersetzung mit der eigenen Rolle zwischen Autorität und Lernbegleiter.',
       isPriority: false
     },
     'c1-7': {
       competenceId: 'c1-7',
       level: 9,
-      note: 'Beleg: ⚡ E-Mail Screenshot\n\nBereitstellung eigener Materialien (Apps & Verlaufspläne) für die Fachschaft per E-Mail (Sharing Culture).',
+      note: 'Beleg: 📧 E-Mail Screenshot\n\nAktives Sharing von Materialien: Versand der selbst erstellten Einheitskreis-Visualisierung an die Fachschaft Mathe.',
       isPriority: false
     },
     'c1-8': {
       competenceId: 'c1-8',
       level: 8,
-      note: 'Beleg: ⚡ E-Mail Screenshot\n\nProfessionelle Korrespondenz mit Ausbildungsbetrieben/Eltern (anonymisiert).',
+      note: 'Beleg: 📄 Kalender/Notiz\n\nDurchführung von 4 Beratungsgesprächen am Elternabend (Leistungsstand, Verhalten).',
       isPriority: false
     },
     'c1-9': {
       competenceId: 'c1-9',
       level: 8,
-      note: 'Beleg: 💻 Lehrstil-Tool\n\nTheoretische Fundierung der eigenen Resilienz und Burnout-Prävention durch Balance von Nähe und Distanz.',
+      note: 'Beleg: 🗣️ Reflexion\n\nRessourcenmanagement: Nutzung der Apps zur Entlastung bei Korrekturen (Automatisierung) und Unterrichtsvorbereitung.',
       isPriority: false
     },
     'c2-1': {
       competenceId: 'c2-1',
       level: 8,
-      note: 'Beleg: 💻 Bilanz-App\n\nFörderung ökonomischer Mündigkeit durch Simulation von Finanzentscheidungen im \'ReichGeldSpiel\'.',
+      note: 'Beleg: 💻 Bilanz-App\n\nFörderung ökonomischer Mündigkeit durch Simulation von Finanzentscheidungen (ReichGeldSpiel).',
       isPriority: false
     },
     'c2-2': {
       competenceId: 'c2-2',
       level: 8,
-      note: 'Beleg: 📄 Verlaufsplan\n\nPlanung von Binnendifferenzierung durch \'Hilfekarten\' und \'Tippkarten\' im Unterrichtsverlauf (siehe Spalte Medien).',
+      note: 'Beleg: 💻 ESP32-App\n\nBinnendifferenzierung durch digitale \'Guided Tours\' und Hilfestellungen für schwächere Lerner.',
       isPriority: false
     },
     'c2-3': {
       competenceId: 'c2-3',
       level: 7,
-      note: 'Beleg: ⚡ Aktennotiz\n\nDokumentation der Zusammenarbeit mit der Schulsozialarbeit zur individuellen Förderung.',
+      note: 'Beleg: 📄 Kalender/Notiz\n\nDokumentierte Elterngespräche (siehe Elternabend) zur Abstimmung gemeinsamer Erziehungsziele.',
       isPriority: false
     },
     'c2-4': {
       competenceId: 'c2-4',
-      level: 8,
-      note: 'Beleg: 💻 Lehrstil-Tool\n\nAnalyse von Konfliktpotentialen im Klassenraum; Förderung einer demokratischen Wertekultur (Partizipation).',
-      isPriority: false
+      level: 9,
+      note: 'Beleg: 🗣️ Praxis (Pinnwand)\n\nBeziehungsarbeit mit Karten: Anonyme Kritikrunde, bei der Schüler Karten gewichten. Fördert demokratische Werte und Konfliktfähigkeit ohne Bloßstellung.',
+      isPriority: true
     },
     'c2-5': {
       competenceId: 'c2-5',
       level: 8,
-      note: 'Beleg: 💻 Bilanz-App\n\nFörderung der Eigenverantwortung: Schüler erhalten spiegelbildliches Feedback durch Progress-Tracking.',
+      note: 'Beleg: 🗣️ Praxis (Pinnwand)\n\nSchüler übernehmen Verantwortung für das Klassenklima, indem sie Kritikpunkte an der Pinnwand selbst priorisieren und Lösungen vorschlagen.',
       isPriority: false
     },
     'c3-1': {
       competenceId: 'c3-1',
-      level: 7,
-      note: 'Beleg: 📄 Verlaufsplan\n\nSteuerung von Unterrichtsgesprächen (UG) in der Erarbeitungsphase zur Aktivierung von Vorwissen.',
+      level: 8,
+      note: 'Beleg: 🗣️ Reflexion\n\nKontinuierlicher, mündlicher Austausch mit Kollegen (Tür-und-Angel-Gespräche) zur schnellen Abstimmung. Verzicht auf Bürokratisierung durch Protokolle.',
       isPriority: false
     },
     'c3-2': {
       competenceId: 'c3-2',
       level: 8,
-      note: 'Beleg: 💻 Lehrstil-Tool\n\nSensibilisierung für die Auswirkung des eigenen Verhaltens auf das Klassenklima und das emotionale Wohlbefinden.',
+      note: 'Beleg: 🗣️ Praxis (Pinnwand)\n\nDie Methode (Lehrer verlässt Raum, anonyme Karten) ermöglicht ehrliches Feedback zur Stimmung, das in direkter Konfrontation oft verschwiegen wird.',
       isPriority: false
     },
     'c3-3': {
       competenceId: 'c3-3',
       level: 8,
-      note: 'Beleg: 🎨 Tafelbild\n\nSicherung korrekter Fachterminologie (Nacherfüllung, Rücktritt, Minderung) durch visuelle Strukturierung.',
+      note: 'Beleg: 📄 Erwartungshorizont\n\nBewertungsraster für das BWL-Referat fordert und bewertet explizit die korrekte Verwendung der Fachterminologie.',
       isPriority: false
     },
     'c3-4': {
       competenceId: 'c3-4',
       level: 10,
-      note: 'Beleg: 💻 Bilanz-App\n\nFull-Stack-Kompetenz: Wechsel vom Medien-Konsumenten zum Produzenten komplexer didaktischer Software.',
+      note: 'Beleg: 📧 Datei Einheitskreis\n\nErstellung komplexer mathematischer Visualisierungen (Einheitskreis) und Weitergabe an Kollegen.',
       isPriority: true
     },
     'c3-5': {
       competenceId: 'c3-5',
       level: 8,
-      note: 'Beleg: ⚡ Gedächtnisprotokoll\n\nKonstruktive Lösung von Unterrichtsstörungen durch Vier-Augen-Gespräche und Zielvereinbarungen.',
+      note: 'Beleg: 🗣️ Praxis (Pinnwand)\n\nPräventive Konfliktbearbeitung durch die Pinnwand-Methode: Spannungen werden besprochen, bevor sie eskalieren.',
       isPriority: false
     },
     'c3-6': {
       competenceId: 'c3-6',
       level: 9,
-      note: 'Beleg: 💻 Lehrstil-Tool\n\nWissenschaftliche Fundierung eines lernförderlichen Klimas (vgl. Hattie: d=0.52) durch Balance von Wärme und Struktur.',
+      note: 'Beleg: 💻 Lehrstil-Modell\n\nReflexion über die Balance von Nähe und Distanz zur Schaffung einer angstfreien Lernatmosphäre.',
       isPriority: false
     },
     'c4-1': {
       competenceId: 'c4-1',
       level: 8,
-      note: 'Beleg: 🎨 Tafelbild\n\nVisualisierung komplexer Rechtszusammenhänge (§ 437 BGB) fördert den Aufbau mentaler Modelle bei den SuS.',
+      note: 'Beleg: 💻 ESP32-App\n\nVisualisierung unsichtbarer Prozesse (Stromfluss) fördert den Aufbau mentaler Modelle und fachlicher Kompetenz.',
       isPriority: false
     },
     'c4-2': {
       competenceId: 'c4-2',
       level: 8,
-      note: 'Beleg: 📄 Verlaufsplan\n\nMethodenvielfalt: Wechsel zwischen Storytelling (Einstieg), Unterrichtsgespräch und kooperativer Fallarbeit (PA).',
+      note: 'Beleg: 📄 Verlaufsplan\n\nStrukturierte Planung (Einstieg-Erarbeitung-Sicherung) am Beispiel der Stunde \'Mangelhafte Lieferung\'.',
       isPriority: false
     },
     'c4-3': {
       competenceId: 'c4-3',
-      level: 8,
-      note: 'Beleg: 📄 Verlaufsplan\n\nLebensweltbezug im Einstieg (\'Sneaker-Fail\'): Anknüpfung an reale Erfahrungswelt der Lernenden zur Sinnstiftung.',
+      level: 9,
+      note: 'Beleg: 📄 Verlaufsplan/Foto\n\nLebensweltbezug durch Realobjekt: Weiße Sneaker als authentischer Einstieg in das Thema Kaufvertragsstörungen.',
       isPriority: false
     },
     'c4-4': {
       competenceId: 'c4-4',
       level: 9,
-      note: 'Beleg: 💻 Bilanz-App\n\nGestaltung zeit- und ortsunabhängiger digitaler Lernräume (Flipped Classroom Szenarien).',
+      note: 'Beleg: 💻 Bilanz-App\n\nBereitstellung digitaler Lernräume für zeitunabhängiges Üben (Gamification).',
       isPriority: true
     },
     'c4-5': {
       competenceId: 'c4-5',
       level: 9,
-      note: 'Beleg: 💻 ESP32-App\n\nFächerübergreifender Ansatz: Verknüpfung von Informatik (Logik), Physik (Elektrik) und Englisch (Datasheets).',
+      note: 'Beleg: 💻 ESP32-App\n\nFächerübergreifender Ansatz: Verknüpfung von Informatik, Physik und technischem Englisch.',
       isPriority: false
     },
     'c4-6': {
       competenceId: 'c4-6',
       level: 8,
-      note: 'Beleg: 📄 Verlaufsplan\n\nInszenierung eines stummen Impulses mit Realobjekt (Sneaker) zur Weckung von Neugier und Betroffenheit.',
+      note: 'Beleg: 📄 Verlaufsplan/Foto\n\nInszenierung eines stummen Impulses (Sneaker auf Pult) zur Weckung von Neugier.',
       isPriority: false
     },
     'c4-7': {
       competenceId: 'c4-7',
       level: 9,
-      note: 'Beleg: 💻 ESP32-App\n\nSystematisierung der Fehlersuche: Der \'Troubleshooting-Baum\' etabliert Fehler als analytische Lernanlässe (Debugging).',
+      note: 'Beleg: 🗣️ Praxis (Pinnwand)\n\nDie anonyme Karten-Methode etabliert eine Fehlerkultur, in der Kritik als Chance zur Verbesserung gesehen wird, nicht als Angriff.',
       isPriority: false
     },
     'c4-8': {
       competenceId: 'c4-8',
       level: 8,
-      note: 'Beleg: 💻 Lehrstil-Tool\n\nTheoretische Fundierung selbstregulierten Lernens: Übergang von enger Führung zu begleiteter Autonomie.',
+      note: 'Beleg: 💻 Bilanz-App\n\nSelbstgesteuertes Lernen: Schüler bestimmen Tempo und Wiederholungen in der App eigenständig.',
       isPriority: false
     },
     'c4-9': {
       competenceId: 'c4-9',
-      level: 7,
-      note: 'Beleg: 📄 Verlaufsplan\n\nSicherung des Lernerfolgs durch Transferaufgabe (E-Mail schreiben) am Stundenende.',
+      level: 8,
+      note: 'Beleg: 📄 Jahresplan\n\nDer Jahresplan sichert den kumulativen Kompetenzaufbau über das gesamte Schuljahr (Spiralcurriculum).',
       isPriority: false
     },
     'c4-10': {
       competenceId: 'c4-10',
-      level: 8,
-      note: 'Beleg: ⚡ Edkimo PDF\n\nDatengestützte Evaluation der Unterrichtsqualität durch anonymes Schülerfeedback.',
+      level: 9,
+      note: 'Beleg: 🗣️ Praxis (Pinnwand)\n\nMethodisches Schülerfeedback: Anonyme Kartenabfrage an der Pinnwand (Lehrer verlässt Raum) garantiert ehrliche Rückmeldung zur Unterrichtsqualität.',
       isPriority: false
     },
     'c4-11': {
       competenceId: 'c4-11',
       level: 9,
-      note: 'Beleg: 💻 Bilanz-App\n\nDigitale Adaptivität: Software passt sich durch verschiedene Levels dem Lerntempo an.',
+      note: 'Beleg: 💻 Bilanz-App\n\nSoftware bietet verschiedene Schwierigkeitsstufen (Levels) für unterschiedliche Leistungsniveaus.',
       isPriority: false
     },
     'c5-1': {
       competenceId: 'c5-1',
-      level: 9,
-      note: 'Beleg: 💻 Bilanz-App\n\nEinsatz von Learning Analytics (Quiz-Statistiken) zur datengestützten Diagnose von Lernständen in Echtzeit.',
-      isPriority: true
+      level: 8,
+      note: 'Beleg: 📄 Erwartungshorizont\n\nDiagnose der Präsentationskompetenz anhand eines detaillierten Kriterienrasters (BWL Referat).',
+      isPriority: false
     },
     'c5-2': {
       competenceId: 'c5-2',
       level: 9,
-      note: 'Beleg: 💻 ESP32-App\n\nIntegrierte Fördermaßnahmen: \'Just-in-Time\' Erklärungen und Warnhinweise bei Fehlbedienung.',
+      note: 'Beleg: 💻 ESP32-App\n\nDirektes Feedback und Hilfestellungen in der App ermöglichen individuelle Förderung ohne bloßstellende Korrektur.',
       isPriority: false
     },
     'c5-3': {
       competenceId: 'c5-3',
-      level: 9,
-      note: 'Beleg: 💻 Lehrstil-Tool\n\nApp als Reflexionsinstrument: Das Tool berät Nutzer (Lehrer) datengestützt zur Optimierung ihres Führungsstils.',
+      level: 8,
+      note: 'Beleg: 📄 Kalender/Notiz\n\nBeratung von Eltern und Schülern am Elternsprechtag bzgl. Lernstrategien und Leistungsstand.',
       isPriority: false
     },
     'c5-4': {
       competenceId: 'c5-4',
-      level: 8,
-      note: 'Beleg: ⚡ Korrektur (Foto)\n\nTransparente Leistungsbewertung anhand eines Erwartungshorizonts; formative Rückmeldung auf Arbeitsblättern.',
+      level: 9,
+      note: 'Beleg: 📄 Erwartungshorizont\n\nTransparente Leistungsbewertung: Der Erwartungshorizont (Referat) wurde den Schülern vorab bekannt gegeben und besprochen.',
       isPriority: false
     }
   }
 };
+
