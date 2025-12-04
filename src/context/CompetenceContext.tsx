@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import type { ReactNode } from 'react';
-import type { UserProfile, Level } from '../types';
+import type { UserProfile, Level, Attachment } from '../types';
 
 interface CompetenceContextType {
   profiles: UserProfile[];
@@ -10,10 +10,16 @@ interface CompetenceContextType {
   updateRating: (competenceId: string, level: Level) => void;
   updateNote: (competenceId: string, note: string) => void;
   togglePriority: (competenceId: string) => void;
+  addAttachment: (competenceId: string, file: File) => void;
+  addLinkAttachment: (competenceId: string, name: string, url: string) => void;
+  removeAttachment: (competenceId: string, attachmentId: string) => void;
   exportData: () => void;
-  importData: (file: File) => void;
+  importData: (file: File, mode?: 'merge' | 'replace' | 'ask') => void;
+  deleteProfile: (profileId: string) => void;
   getActiveProfile: () => UserProfile | undefined;
 }
+
+import { demoProfile } from '../demoData';
 
 const CompetenceContext = createContext<CompetenceContextType | undefined>(undefined);
 
@@ -38,14 +44,8 @@ export const CompetenceProvider: React.FC<{ children: ReactNode }> = ({ children
       }
     } else {
       // Initial setup if empty
-      const initialProfile: UserProfile = {
-        id: 'default',
-        name: 'Ich',
-        color: COLORS[0],
-        ratings: {}
-      };
-      setProfiles([initialProfile]);
-      setActiveProfileId(initialProfile.id);
+      setProfiles([demoProfile]);
+      setActiveProfileId(demoProfile.id);
     }
   }, []);
 
@@ -115,6 +115,93 @@ export const CompetenceProvider: React.FC<{ children: ReactNode }> = ({ children
     }));
   };
 
+  const addAttachment = (competenceId: string, file: File) => {
+    // Limit file size to 2MB to prevent localStorage issues
+    if (file.size > 2 * 1024 * 1024) {
+      alert("Datei ist zu groß (Max 2MB)");
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      const data = e.target?.result as string;
+      const newAttachment: Attachment = {
+        id: Date.now().toString(),
+        name: file.name,
+        type: file.type,
+        size: file.size,
+        data
+      };
+
+      setProfiles(prev => prev.map(p => {
+        if (p.id === activeProfileId) {
+          const currentRating = p.ratings[competenceId] || { competenceId, level: null, note: '', isPriority: false, attachments: [] };
+          return {
+            ...p,
+            ratings: {
+              ...p.ratings,
+              [competenceId]: { 
+                ...currentRating, 
+                attachments: [...(currentRating.attachments || []), newAttachment] 
+              }
+            }
+          };
+        }
+        return p;
+      }));
+    };
+    reader.readAsDataURL(file);
+  };
+
+  const addLinkAttachment = (competenceId: string, name: string, url: string) => {
+    const newAttachment: Attachment = {
+      id: Date.now().toString(),
+      name,
+      type: 'link',
+      size: 0,
+      data: url,
+      isLink: true
+    };
+
+    setProfiles(prev => prev.map(p => {
+      if (p.id === activeProfileId) {
+        const currentRating = p.ratings[competenceId] || { competenceId, level: null, note: '', isPriority: false, attachments: [] };
+        return {
+          ...p,
+          ratings: {
+            ...p.ratings,
+            [competenceId]: { 
+              ...currentRating, 
+              attachments: [...(currentRating.attachments || []), newAttachment] 
+            }
+          }
+        };
+      }
+      return p;
+    }));
+  };
+
+  const removeAttachment = (competenceId: string, attachmentId: string) => {
+    setProfiles(prev => prev.map(p => {
+      if (p.id === activeProfileId) {
+        const currentRating = p.ratings[competenceId];
+        if (!currentRating) return p;
+        
+        return {
+          ...p,
+          ratings: {
+            ...p.ratings,
+            [competenceId]: { 
+              ...currentRating, 
+              attachments: (currentRating.attachments || []).filter(a => a.id !== attachmentId) 
+            }
+          }
+        };
+      }
+      return p;
+    }));
+  };
+
   const exportData = () => {
     const dataStr = JSON.stringify({ profiles, activeProfileId }, null, 2);
     const blob = new Blob([dataStr], { type: "application/json" });
@@ -127,15 +214,62 @@ export const CompetenceProvider: React.FC<{ children: ReactNode }> = ({ children
     document.body.removeChild(link);
   };
 
-  const importData = (file: File) => {
+  const importData = (file: File, mode: 'merge' | 'replace' | 'ask' = 'ask') => {
     const reader = new FileReader();
     reader.onload = (e) => {
       try {
         const result = e.target?.result as string;
         const parsed = JSON.parse(result);
+        
         if (parsed.profiles && Array.isArray(parsed.profiles)) {
-          setProfiles(parsed.profiles);
-          setActiveProfileId(parsed.activeProfileId || parsed.profiles[0]?.id || '');
+          const importedProfiles = parsed.profiles as UserProfile[];
+          
+          // Check if we should merge or replace
+          let shouldMerge = false;
+          if (mode === 'ask') {
+            shouldMerge = window.confirm(
+              "Möchten Sie die Profile hinzufügen (OK) oder die aktuellen Daten ersetzen (Abbrechen)?"
+            );
+          } else {
+            shouldMerge = (mode === 'merge');
+          }
+
+          if (shouldMerge) {
+            // Merge logic: Add profiles that don't exist yet (by ID)
+            // If ID exists, we generate a new ID to avoid conflicts
+            setProfiles(prevProfiles => {
+              const newProfiles = [...prevProfiles];
+              
+              importedProfiles.forEach(importedProfile => {
+                // Check if exact ID exists
+                const exists = newProfiles.some(p => p.id === importedProfile.id);
+                
+                if (exists) {
+                  // Create a copy with new ID
+                  const newId = `${importedProfile.id}_imported_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+                  newProfiles.push({
+                    ...importedProfile,
+                    id: newId,
+                    name: `${importedProfile.name} (Importiert)`
+                  });
+                } else {
+                  newProfiles.push(importedProfile);
+                }
+              });
+              return newProfiles;
+            });
+            
+            if (mode === 'ask') {
+              alert(`${importedProfiles.length} Profile wurden importiert.`);
+            }
+          } else {
+            // Replace logic
+            setProfiles(importedProfiles);
+            setActiveProfileId(parsed.activeProfileId || importedProfiles[0]?.id || '');
+            if (mode === 'ask') {
+              alert("Daten wurden ersetzt.");
+            }
+          }
         } else {
           alert("Ungültiges Dateiformat");
         }
@@ -145,6 +279,23 @@ export const CompetenceProvider: React.FC<{ children: ReactNode }> = ({ children
       }
     };
     reader.readAsText(file);
+  };
+
+  const deleteProfile = (profileId: string) => {
+    if (profiles.length <= 1) {
+      alert("Das letzte Profil kann nicht gelöscht werden.");
+      return;
+    }
+    
+    if (window.confirm("Möchten Sie dieses Profil wirklich löschen?")) {
+      const newProfiles = profiles.filter(p => p.id !== profileId);
+      setProfiles(newProfiles);
+      
+      // If we deleted the active profile, switch to the first available one
+      if (activeProfileId === profileId && newProfiles.length > 0) {
+        setActiveProfileId(newProfiles[0].id);
+      }
+    }
   };
 
   const getActiveProfile = () => profiles.find(p => p.id === activeProfileId);
@@ -158,8 +309,12 @@ export const CompetenceProvider: React.FC<{ children: ReactNode }> = ({ children
       updateRating,
       updateNote,
       togglePriority,
+      addAttachment,
+      addLinkAttachment,
+      removeAttachment,
       exportData,
       importData,
+      deleteProfile,
       getActiveProfile
     }}>
       {children}

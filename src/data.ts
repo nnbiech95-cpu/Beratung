@@ -11,14 +11,13 @@ export const modules: Module[] = [
         competences: [
           {
             id: 'c1-1',
-            title: 'Bildungsgänge',
-            description: 'Kenntnis und Beratung zu Bildungsgängen.',
-            levels: {
-              A: 'Ich habe einen Überblick über die Bildungsgänge.',
-              B: 'Ich kann die Anforderungen der Bildungsgänge beschreiben.',
-              C: 'Ich berate Schüler bezüglich der Bildungsgänge differenziert.',
-              D: 'Ich entwickle Konzepte zur Laufbahnberatung weiter.'
-            }
+            title: 'Bildungsgänge & Planung',
+            description: 'Lehrerinnen und Lehrer konzipieren längerfristig und aufbauend die Förderung von Handlungskompetenzen für Lerngruppen in unterschiedlichen Bildungsgängen ihrer Ausbildungsschule.',
+            activities: [
+              'gehe sicher mit Lehrplänen um und entwickle didaktische Abschnittspläne für unterschiedliche Schulformen berufsbildender Schulen.',
+              'setze Lehrplanvorgaben in passende Handlungskompetenzen für Lerngruppen um.',
+              'nehme im Unterricht Bildungs- und Erziehungsaufgaben passend zum Auftrag des jeweiligen Bildungsganges wahr.'
+            ]
           }
         ]
       },
@@ -28,14 +27,9 @@ export const modules: Module[] = [
         competences: [
           {
             id: 'c1-2',
-            title: 'Aktualität',
+            title: 'Aktualität & Innovation',
             description: 'Orientierung an aktuellen Entwicklungen.',
-            levels: {
-              A: 'Ich nehme aktuelle Entwicklungen wahr.',
-              B: 'Ich integriere aktuelle Themen in meine Arbeit.',
-              C: 'Ich diskutiere aktuelle Entwicklungen kritisch.',
-              D: 'Ich initiiere Projekte zu aktuellen Themen.'
-            }
+            activities: []
           }
         ]
       },
@@ -45,14 +39,9 @@ export const modules: Module[] = [
         competences: [
           {
             id: 'c1-3',
-            title: 'Qualitätsarbeit',
+            title: 'Qualitätsarbeit (IKT)',
             description: 'Beteiligung an der Qualitätsentwicklung.',
-            levels: {
-              A: 'Ich kenne die Konzepte der Qualitätsarbeit.',
-              B: 'Ich wirke an Evaluationsmaßnahmen mit.',
-              C: 'Ich bringe Vorschläge zur Qualitätsverbesserung ein.',
-              D: 'Ich leite Arbeitsgruppen zur Qualitätsentwicklung.'
-            }
+            activities: []
           }
         ]
       },
@@ -64,12 +53,7 @@ export const modules: Module[] = [
             id: 'c1-4',
             title: 'Rechtsrahmen',
             description: 'Anwendung schulrechtlicher Bestimmungen.',
-            levels: {
-              A: 'Ich kenne die wichtigsten Rechtsvorschriften.',
-              B: 'Ich handele in Standardsituationen rechtssicher.',
-              C: 'Ich wende Rechtsvorschriften auch in komplexen Fällen an.',
-              D: 'Ich unterstütze Kollegen in rechtlichen Fragen.'
-            }
+            activities: []
           }
         ]
       },
@@ -79,14 +63,9 @@ export const modules: Module[] = [
         competences: [
           {
             id: 'c1-5',
-            title: 'Rolle Lernende',
+            title: 'Rollenverständnis (Lernende)',
             description: 'Verständnis der Rolle der Lernenden.',
-            levels: {
-              A: 'Ich nehme die Perspektive der Lernenden wahr.',
-              B: 'Ich berücksichtige die Rolle der Lernenden im Unterricht.',
-              C: 'Ich fördere die aktive Rolle der Lernenden.',
-              D: 'Ich entwickle Konzepte zur Stärkung der Lernendenrolle.'
-            }
+            activities: []
           }
         ]
       },
@@ -96,14 +75,9 @@ export const modules: Module[] = [
         competences: [
           {
             id: 'c1-6',
-            title: 'Rolle Lehrende',
+            title: 'Rollenverständnis (Lehrende)',
             description: 'Reflexion der eigenen Lehrerrolle.',
-            levels: {
-              A: 'Ich kenne die Erwartungen an die Lehrerrolle.',
-              B: 'Ich fülle meine Rolle bewusst aus.',
-              C: 'Ich reflektiere mein Rollenhandeln kritisch.',
-              D: 'Ich entwickle mein professionelles Selbstverständnis weiter.'
-            }
+            activities: []
           }
         ]
       },
@@ -113,14 +87,9 @@ export const modules: Module[] = [
         competences: [
           {
             id: 'c1-7',
-            title: 'Integration',
+            title: 'Integration in Teams',
             description: 'Gestaltung von Integrationsprozessen.',
-            levels: {
-              A: 'Ich kenne die Grundlagen der Integration.',
-              B: 'Ich berücksichtige Integrationsaspekte im Unterricht.',
-              C: 'Ich fördere aktiv die Integration aller Schüler.',
-              D: 'Ich entwickle inklusive Konzepte für die Schule.'
-            }
+            activities: []
           }
         ]
       },
@@ -130,14 +99,9 @@ export const modules: Module[] = [
         competences: [
           {
             id: 'c1-8',
-            title: 'Kooperation',
+            title: 'Kooperation Externe',
             description: 'Zusammenarbeit mit Kollegen und Partnern.',
-            levels: {
-              A: 'Ich bin bereit zur Kooperation.',
-              B: 'Ich arbeite in Teams konstruktiv mit.',
-              C: 'Ich initiiere Kooperationsprojekte.',
-              D: 'Ich vernetze die Schule mit externen Partnern.'
-            }
+            activities: []
           }
         ]
       },
@@ -147,14 +111,9 @@ export const modules: Module[] = [
         competences: [
           {
             id: 'c1-9',
-            title: 'Anforderungen',
+            title: 'Berufliche Anforderungen',
             description: 'Umgang mit beruflichen Anforderungen.',
-            levels: {
-              A: 'Ich kenne die Anforderungen des Berufs.',
-              B: 'Ich bewältige die Anforderungen im Alltag.',
-              C: 'Ich gehe professionell mit Belastungen um.',
-              D: 'Ich entwickle Strategien zur Gesunderhaltung.'
-            }
+            activities: []
           }
         ]
       }
@@ -170,14 +129,9 @@ export const modules: Module[] = [
         competences: [
           {
             id: 'c2-1',
-            title: 'Sozialisierung',
+            title: 'Sozialisierungsprozesse',
             description: 'Gestaltung sozialer Prozesse.',
-            levels: {
-              A: 'Ich nehme soziale Prozesse wahr.',
-              B: 'Ich reagiere angemessen auf soziale Dynamiken.',
-              C: 'Ich fördere aktiv ein positives Sozialklima.',
-              D: 'Ich entwickle Konzepte zum sozialen Lernen.'
-            }
+            activities: []
           }
         ]
       },
@@ -187,14 +141,9 @@ export const modules: Module[] = [
         competences: [
           {
             id: 'c2-2',
-            title: 'Förderbedarf',
+            title: 'Heterogenität & Förderung',
             description: 'Erkennen und Umgang mit Förderbedarf.',
-            levels: {
-              A: 'Ich erkenne offensichtlichen Förderbedarf.',
-              B: 'Ich leite erste Fördermaßnahmen ein.',
-              C: 'Ich erstelle differenzierte Förderpläne.',
-              D: 'Ich evaluiere Förderkonzepte.'
-            }
+            activities: []
           }
         ]
       },
@@ -204,14 +153,9 @@ export const modules: Module[] = [
         competences: [
           {
             id: 'c2-3',
-            title: 'Beratung',
+            title: 'Beratung (Koop)',
             description: 'Beratung in Erziehungsfragen.',
-            levels: {
-              A: 'Ich führe einfache Beratungsgespräche.',
-              B: 'Ich berate bei alltäglichen Problemen.',
-              C: 'Ich führe schwierige Gespräche lösungsorientiert.',
-              D: 'Ich kooperiere mit Beratungseinrichtungen.'
-            }
+            activities: []
           }
         ]
       },
@@ -221,14 +165,9 @@ export const modules: Module[] = [
         competences: [
           {
             id: 'c2-4',
-            title: 'Werte und Normen',
+            title: 'Werte & Konflikte',
             description: 'Vermittlung von Werten und Normen.',
-            levels: {
-              A: 'Ich kenne die relevanten Werte und Normen.',
-              B: 'Ich lebe Werte im Unterricht vor.',
-              C: 'Ich thematisiere Wertekonflikte.',
-              D: 'Ich initiiere Projekte zur Werteerziehung.'
-            }
+            activities: []
           }
         ]
       },
@@ -238,14 +177,9 @@ export const modules: Module[] = [
         competences: [
           {
             id: 'c2-5',
-            title: 'Verantwortung',
+            title: 'Verantwortungsbewusstsein',
             description: 'Übernahme von Verantwortung.',
-            levels: {
-              A: 'Ich nehme meine Verantwortung wahr.',
-              B: 'Ich fördere Verantwortungsübernahme bei Schülern.',
-              C: 'Ich übertrage Verantwortung an Schüler.',
-              D: 'Ich entwickle Konzepte zur Verantwortungsförderung.'
-            }
+            activities: []
           }
         ]
       }
@@ -261,14 +195,9 @@ export const modules: Module[] = [
         competences: [
           {
             id: 'c3-1',
-            title: 'Gesprächstechniken',
+            title: 'Gesprächsführung',
             description: 'Einsatz von Gesprächstechniken.',
-            levels: {
-              A: 'Ich kenne grundlegende Gesprächstechniken.',
-              B: 'Ich wende Gesprächstechniken an.',
-              C: 'Ich führe Gespräche professionell.',
-              D: 'Ich leite komplexe Gespräche souverän.'
-            }
+            activities: []
           }
         ]
       },
@@ -278,14 +207,9 @@ export const modules: Module[] = [
         competences: [
           {
             id: 'c3-2',
-            title: 'Stimmungen',
+            title: 'Wahrnehmung / Stimmungen',
             description: 'Wahrnehmung und Umgang mit Stimmungen.',
-            levels: {
-              A: 'Ich nehme Stimmungen wahr.',
-              B: 'Ich gehe auf Stimmungen ein.',
-              C: 'Ich beeinflusse die Stimmung positiv.',
-              D: 'Ich nutze Stimmungen für Lernprozesse.'
-            }
+            activities: []
           }
         ]
       },
@@ -295,14 +219,9 @@ export const modules: Module[] = [
         competences: [
           {
             id: 'c3-3',
-            title: 'Sprache',
+            title: 'Sprache (Fachsprache)',
             description: 'Sprachvorbild und Sprachförderung.',
-            levels: {
-              A: 'Ich drücke mich verständlich aus.',
-              B: 'Ich achte auf fachsprachliche Korrektheit.',
-              C: 'Ich fördere die Sprachkompetenz der Schüler.',
-              D: 'Ich entwickle sprachsensible Konzepte.'
-            }
+            activities: []
           }
         ]
       },
@@ -312,14 +231,9 @@ export const modules: Module[] = [
         competences: [
           {
             id: 'c3-4',
-            title: 'Medieneinsatz',
+            title: 'Medieneinsatz (Exzellenz)',
             description: 'Didaktischer Einsatz von Medien.',
-            levels: {
-              A: 'Ich bediene gängige Medien.',
-              B: 'Ich wähle Medien passend aus.',
-              C: 'Ich leite zum kritischen Medienumgang an.',
-              D: 'Ich entwickle Medienkonzepte.'
-            }
+            activities: []
           }
         ]
       },
@@ -331,12 +245,7 @@ export const modules: Module[] = [
             id: 'c3-5',
             title: 'Konflikte',
             description: 'Umgang mit Konflikten.',
-            levels: {
-              A: 'Ich erkenne Konflikte.',
-              B: 'Ich interveniere angemessen.',
-              C: 'Ich vermittle in Konflikten.',
-              D: 'Ich implementiere Präventionskonzepte.'
-            }
+            activities: []
           }
         ]
       },
@@ -346,14 +255,9 @@ export const modules: Module[] = [
         competences: [
           {
             id: 'c3-6',
-            title: 'Lernklima',
+            title: 'Lernförderliches Klima',
             description: 'Gestaltung des Lernklimas.',
-            levels: {
-              A: 'Ich achte auf ein ruhiges Lernklima.',
-              B: 'Ich sorge für eine förderliche Arbeitsatmosphäre.',
-              C: 'Ich schaffe ein motivierendes Lernklima.',
-              D: 'Ich entwickle das Lernklima nachhaltig weiter.'
-            }
+            activities: []
           }
         ]
       }
@@ -369,14 +273,9 @@ export const modules: Module[] = [
         competences: [
           {
             id: 'c4-1',
-            title: 'Kompetenzorientierung',
+            title: 'Kompetenzförderung',
             description: 'Ausrichtung am Kompetenzerwerb.',
-            levels: {
-              A: 'Ich kenne die Kompetenzbereiche.',
-              B: 'Ich plane kompetenzorientiert.',
-              C: 'Ich fördere individuelle Kompetenzen.',
-              D: 'Ich entwickle kompetenzorientierte Curricula.'
-            }
+            activities: []
           }
         ]
       },
@@ -386,14 +285,9 @@ export const modules: Module[] = [
         competences: [
           {
             id: 'c4-2',
-            title: 'Didaktik',
+            title: 'Didaktik & Methodik',
             description: 'Didaktische Planung und Durchführung.',
-            levels: {
-              A: 'Ich plane Stunden strukturiert.',
-              B: 'Ich begründe didaktische Entscheidungen.',
-              C: 'Ich variiere didaktische Methoden.',
-              D: 'Ich entwickle didaktische Konzepte weiter.'
-            }
+            activities: []
           }
         ]
       },
@@ -403,14 +297,9 @@ export const modules: Module[] = [
         competences: [
           {
             id: 'c4-3',
-            title: 'Aufbereitung',
+            title: 'Schülerorientierung',
             description: 'Didaktische Aufbereitung von Inhalten.',
-            levels: {
-              A: 'Ich bereite Inhalte verständlich auf.',
-              B: 'Ich reduziere didaktisch angemessen.',
-              C: 'Ich bereite Inhalte differenziert auf.',
-              D: 'Ich erstelle eigene Lernmaterialien.'
-            }
+            activities: []
           }
         ]
       },
@@ -420,14 +309,9 @@ export const modules: Module[] = [
         competences: [
           {
             id: 'c4-4',
-            title: 'Lernumgebung',
+            title: 'Lernumgebungen',
             description: 'Gestaltung der Lernumgebung.',
-            levels: {
-              A: 'Ich nutze die vorhandene Lernumgebung.',
-              B: 'Ich gestalte die Lernumgebung funktional.',
-              C: 'Ich schaffe eine anregende Lernumgebung.',
-              D: 'Ich entwickle Konzepte zur Raumgestaltung.'
-            }
+            activities: []
           }
         ]
       },
@@ -439,12 +323,7 @@ export const modules: Module[] = [
             id: 'c4-5',
             title: 'Vernetzung',
             description: 'Vernetzung von Wissen.',
-            levels: {
-              A: 'Ich stelle Bezüge her.',
-              B: 'Ich vernetze Inhalte sinnvoll.',
-              C: 'Ich fördere vernetztes Denken.',
-              D: 'Ich plane fächerübergreifende Projekte.'
-            }
+            activities: []
           }
         ]
       },
@@ -454,14 +333,9 @@ export const modules: Module[] = [
         competences: [
           {
             id: 'c4-6',
-            title: 'Eröffnung',
+            title: 'Eröffnungssituation',
             description: 'Unterrichtseinstiege gestalten.',
-            levels: {
-              A: 'Ich wähle passende Einstiege.',
-              B: 'Ich motiviere durch Einstiege.',
-              C: 'Ich aktiviere Vorwissen gezielt.',
-              D: 'Ich entwickle innovative Einstiegsszenarien.'
-            }
+            activities: []
           }
         ]
       },
@@ -473,12 +347,7 @@ export const modules: Module[] = [
             id: 'c4-7',
             title: 'Fehlerkultur',
             description: 'Umgang mit Fehlern.',
-            levels: {
-              A: 'Ich korrigiere Fehler sachlich.',
-              B: 'Ich thematisiere Fehlerursachen.',
-              C: 'Ich fördere eine positive Fehlerkultur.',
-              D: 'Ich nutze Fehleranalysen zur Entwicklung.'
-            }
+            activities: []
           }
         ]
       },
@@ -488,14 +357,9 @@ export const modules: Module[] = [
         competences: [
           {
             id: 'c4-8',
-            title: 'Selbsttätigkeit',
+            title: 'Schülerselbsttätigkeit',
             description: 'Förderung der Selbsttätigkeit.',
-            levels: {
-              A: 'Ich lasse Schüler selbstständig arbeiten.',
-              B: 'Ich leite zu selbstständigem Arbeiten an.',
-              C: 'Ich fördere selbstgesteuerte Lernprozesse.',
-              D: 'Ich ermögliche offene Lernformen.'
-            }
+            activities: []
           }
         ]
       },
@@ -507,12 +371,7 @@ export const modules: Module[] = [
             id: 'c4-9',
             title: 'Nachhaltigkeit',
             description: 'Sicherung von Lernergebnissen.',
-            levels: {
-              A: 'Ich sichere Ergebnisse.',
-              B: 'Ich übe und wiederhole sinnvoll.',
-              C: 'Ich fördere nachhaltiges Lernen.',
-              D: 'Ich evaluiere den Lernerfolg langfristig.'
-            }
+            activities: []
           }
         ]
       },
@@ -524,12 +383,7 @@ export const modules: Module[] = [
             id: 'c4-10',
             title: 'Evaluation',
             description: 'Evaluation von Unterricht.',
-            levels: {
-              A: 'Ich hole Feedback ein.',
-              B: 'Ich reflektiere meinen Unterricht.',
-              C: 'Ich nutze Evaluationsergebnisse zur Verbesserung.',
-              D: 'Ich etabliere Feedbackkulturen.'
-            }
+            activities: []
           }
         ]
       },
@@ -541,12 +395,7 @@ export const modules: Module[] = [
             id: 'c4-11',
             title: 'Differenzierung',
             description: 'Umgang mit Heterogenität.',
-            levels: {
-              A: 'Ich erkenne Unterschiede.',
-              B: 'Ich differenziere Aufgaben.',
-              C: 'Ich individualisiere Lernwege.',
-              D: 'Ich entwickle inklusive Unterrichtskonzepte.'
-            }
+            activities: []
           }
         ]
       }
@@ -564,12 +413,7 @@ export const modules: Module[] = [
             id: 'c5-1',
             title: 'Diagnostizieren',
             description: 'Diagnose von Lernvoraussetzungen.',
-            levels: {
-              A: 'Ich nutze einfache Diagnoseinstrumente.',
-              B: 'Ich leite Maßnahmen aus Diagnosen ab.',
-              C: 'Ich setze vielfältige Diagnoseverfahren ein.',
-              D: 'Ich entwickle Diagnosekonzepte.'
-            }
+            activities: []
           }
         ]
       },
@@ -581,12 +425,7 @@ export const modules: Module[] = [
             id: 'c5-2',
             title: 'Fördern',
             description: 'Individuelle Förderung.',
-            levels: {
-              A: 'Ich erkenne Förderbedarf.',
-              B: 'Ich erstelle Förderpläne.',
-              C: 'Ich fördere individuell und differenziert.',
-              D: 'Ich evaluiere Fördermaßnahmen.'
-            }
+            activities: []
           }
         ]
       },
@@ -598,12 +437,7 @@ export const modules: Module[] = [
             id: 'c5-3',
             title: 'Beraten',
             description: 'Beratung von Schülern und Eltern.',
-            levels: {
-              A: 'Ich informiere über Leistungen.',
-              B: 'Ich berate strukturiert.',
-              C: 'Ich berate lösungsorientiert.',
-              D: 'Ich koordiniere Beratungsnetzwerke.'
-            }
+            activities: []
           }
         ]
       },
@@ -613,14 +447,9 @@ export const modules: Module[] = [
         competences: [
           {
             id: 'c5-4',
-            title: 'Bewerten',
+            title: 'Bewerten & Beurteilen',
             description: 'Leistungsbewertung.',
-            levels: {
-              A: 'Ich kenne Bewertungsgrundsätze.',
-              B: 'Ich bewerte transparent.',
-              C: 'Ich nutze vielfältige Bewertungsformen.',
-              D: 'Ich entwickle Bewertungskonzepte weiter.'
-            }
+            activities: []
           }
         ]
       }

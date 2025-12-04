@@ -1,12 +1,10 @@
-export type Level = 'A' | 'B' | 'C' | 'D';
+export type Level = number;
 
 export interface Competence {
   id: string;
   title: string;
   description: string;
-  levels: {
-    [key in Level]: string;
-  };
+  activities: string[];
 }
 
 export interface SubModule {
@@ -21,11 +19,21 @@ export interface Module {
   subModules: SubModule[];
 }
 
+export interface Attachment {
+  id: string;
+  name: string;
+  type: string; // MIME type or 'link'
+  size: number; // 0 for links
+  data: string; // Base64 or URL
+  isLink?: boolean;
+}
+
 export interface Rating {
   competenceId: string;
   level: Level | null;
   note: string;
   isPriority: boolean;
+  attachments?: Attachment[];
 }
 
 export interface UserProfile {
@@ -35,4 +43,4 @@ export interface UserProfile {
   ratings: Record<string, Rating>; // competenceId -> Rating
 }
 
-export const LEVELS: Level[] = ['A', 'B', 'C', 'D'];
+export const LEVELS: Level[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];

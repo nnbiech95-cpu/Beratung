@@ -1,11 +1,65 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { CompetenceProvider } from './context/CompetenceContext';
 import { Sidebar } from './components/Sidebar';
 import { ProfileManager } from './components/ProfileManager';
 import { RatingScale } from './components/RatingScale';
 import { Dashboard } from './components/Dashboard';
 import { modules } from './data';
-import { Menu } from 'lucide-react';
+import { Menu, Lock } from 'lucide-react';
+
+function LoginScreen({ onLogin }: { onLogin: () => void }) {
+  const [code, setCode] = useState('');
+  const [error, setError] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (code === '7080') {
+      onLogin();
+    } else {
+      setError(true);
+      setCode('');
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-slate-100 flex items-center justify-center p-4">
+      <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+        <div className="flex justify-center mb-6">
+          <div className="p-3 bg-blue-100 rounded-full">
+            <Lock className="w-8 h-8 text-blue-600" />
+          </div>
+        </div>
+        <h1 className="text-2xl font-bold text-center text-slate-800 mb-2">Zugriffsbeschränkung</h1>
+        <p className="text-center text-slate-500 mb-6">Bitte geben Sie den Zugangscode ein.</p>
+        
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <div>
+            <input
+              type="password"
+              value={code}
+              onChange={(e) => {
+                setCode(e.target.value);
+                setError(false);
+              }}
+              className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all text-center text-lg tracking-widest"
+              placeholder="Code eingeben"
+              autoFocus
+            />
+          </div>
+          {error && (
+            <p className="text-red-500 text-sm text-center">Falscher Code. Bitte versuchen Sie es erneut.</p>
+          )}
+          <button
+            type="submit"
+            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors"
+          >
+            Zugriff freischalten
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+}
 
 function AppContent() {
   const [activeSubModuleId, setActiveSubModuleId] = useState<string>('dashboard');
@@ -89,6 +143,25 @@ function AppContent() {
 }
 
 function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  // Check session storage on mount
+  useEffect(() => {
+    const auth = sessionStorage.getItem('kompetenz_auth');
+    if (auth === 'true') {
+      setIsAuthenticated(true);
+    }
+  }, []);
+
+  const handleLogin = () => {
+    setIsAuthenticated(true);
+    sessionStorage.setItem('kompetenz_auth', 'true');
+  };
+
+  if (!isAuthenticated) {
+    return <LoginScreen onLogin={handleLogin} />;
+  }
+
   return (
     <CompetenceProvider>
       <AppContent />
