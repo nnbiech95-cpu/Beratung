@@ -7,12 +7,12 @@ export const modules: Module[] = [
     subModules: [
       {
         id: 'm1-k1',
-        title: '1.1 Bildungsgänge',
+        title: 'K1 Bildungsgänge',
         competences: [
           {
             id: 'c1-1',
-            title: 'Kenntnis der Bildungsgänge',
-            description: 'Ich kenne die verschiedenen Bildungsgänge und ihre Anforderungen.',
+            title: 'Bildungsgänge',
+            description: 'Kenntnis und Beratung zu Bildungsgängen.',
             levels: {
               A: 'Ich habe einen Überblick über die Bildungsgänge.',
               B: 'Ich kann die Anforderungen der Bildungsgänge beschreiben.',
@@ -24,12 +24,12 @@ export const modules: Module[] = [
       },
       {
         id: 'm1-k2',
-        title: '1.2 Aktualität',
+        title: 'K2 Aktualität',
         competences: [
           {
             id: 'c1-2',
-            title: 'Aktuelle Entwicklungen',
-            description: 'Ich orientiere mein Handeln an aktuellen pädagogischen und gesellschaftlichen Entwicklungen.',
+            title: 'Aktualität',
+            description: 'Orientierung an aktuellen Entwicklungen.',
             levels: {
               A: 'Ich nehme aktuelle Entwicklungen wahr.',
               B: 'Ich integriere aktuelle Themen in meine Arbeit.',
@@ -41,12 +41,12 @@ export const modules: Module[] = [
       },
       {
         id: 'm1-k3',
-        title: '1.3 Qualitätsarbeit',
+        title: 'K3 Qualitätsarbeit',
         competences: [
           {
             id: 'c1-3',
-            title: 'Qualitätsentwicklung',
-            description: 'Ich beteilige mich an der Qualitätsentwicklung der Schule.',
+            title: 'Qualitätsarbeit',
+            description: 'Beteiligung an der Qualitätsentwicklung.',
             levels: {
               A: 'Ich kenne die Konzepte der Qualitätsarbeit.',
               B: 'Ich wirke an Evaluationsmaßnahmen mit.',
@@ -58,12 +58,12 @@ export const modules: Module[] = [
       },
       {
         id: 'm1-k4',
-        title: '1.4 Rechtsrahmen',
+        title: 'K4 Rechtsrahmen',
         competences: [
           {
             id: 'c1-4',
-            title: 'Schulrecht',
-            description: 'Ich wende schulrechtliche Bestimmungen sicher an.',
+            title: 'Rechtsrahmen',
+            description: 'Anwendung schulrechtlicher Bestimmungen.',
             levels: {
               A: 'Ich kenne die wichtigsten Rechtsvorschriften.',
               B: 'Ich handele in Standardsituationen rechtssicher.',
@@ -75,17 +75,85 @@ export const modules: Module[] = [
       },
       {
         id: 'm1-k5',
-        title: '1.5 Rollenverständnis',
+        title: 'K5 Rolle Lernende',
         competences: [
           {
             id: 'c1-5',
-            title: 'Lehrerrolle',
-            description: 'Ich reflektiere mein Rollenverständnis als Lehrkraft.',
+            title: 'Rolle Lernende',
+            description: 'Verständnis der Rolle der Lernenden.',
+            levels: {
+              A: 'Ich nehme die Perspektive der Lernenden wahr.',
+              B: 'Ich berücksichtige die Rolle der Lernenden im Unterricht.',
+              C: 'Ich fördere die aktive Rolle der Lernenden.',
+              D: 'Ich entwickle Konzepte zur Stärkung der Lernendenrolle.'
+            }
+          }
+        ]
+      },
+      {
+        id: 'm1-k6',
+        title: 'K6 Rolle Lehrende',
+        competences: [
+          {
+            id: 'c1-6',
+            title: 'Rolle Lehrende',
+            description: 'Reflexion der eigenen Lehrerrolle.',
             levels: {
               A: 'Ich kenne die Erwartungen an die Lehrerrolle.',
               B: 'Ich fülle meine Rolle bewusst aus.',
               C: 'Ich reflektiere mein Rollenhandeln kritisch.',
               D: 'Ich entwickle mein professionelles Selbstverständnis weiter.'
+            }
+          }
+        ]
+      },
+      {
+        id: 'm1-k7',
+        title: 'K7 Integration',
+        competences: [
+          {
+            id: 'c1-7',
+            title: 'Integration',
+            description: 'Gestaltung von Integrationsprozessen.',
+            levels: {
+              A: 'Ich kenne die Grundlagen der Integration.',
+              B: 'Ich berücksichtige Integrationsaspekte im Unterricht.',
+              C: 'Ich fördere aktiv die Integration aller Schüler.',
+              D: 'Ich entwickle inklusive Konzepte für die Schule.'
+            }
+          }
+        ]
+      },
+      {
+        id: 'm1-k8',
+        title: 'K8 Kooperation',
+        competences: [
+          {
+            id: 'c1-8',
+            title: 'Kooperation',
+            description: 'Zusammenarbeit mit Kollegen und Partnern.',
+            levels: {
+              A: 'Ich bin bereit zur Kooperation.',
+              B: 'Ich arbeite in Teams konstruktiv mit.',
+              C: 'Ich initiiere Kooperationsprojekte.',
+              D: 'Ich vernetze die Schule mit externen Partnern.'
+            }
+          }
+        ]
+      },
+      {
+        id: 'm1-k9',
+        title: 'K9 Anforderungen',
+        competences: [
+          {
+            id: 'c1-9',
+            title: 'Anforderungen',
+            description: 'Umgang mit beruflichen Anforderungen.',
+            levels: {
+              A: 'Ich kenne die Anforderungen des Berufs.',
+              B: 'Ich bewältige die Anforderungen im Alltag.',
+              C: 'Ich gehe professionell mit Belastungen um.',
+              D: 'Ich entwickle Strategien zur Gesunderhaltung.'
             }
           }
         ]
@@ -98,12 +166,12 @@ export const modules: Module[] = [
     subModules: [
       {
         id: 'm2-k1',
-        title: '2.1 Sozialisierung',
+        title: 'K1 Sozialisierung',
         competences: [
           {
             id: 'c2-1',
-            title: 'Soziale Prozesse',
-            description: 'Ich gestalte soziale Prozesse in der Lerngruppe.',
+            title: 'Sozialisierung',
+            description: 'Gestaltung sozialer Prozesse.',
             levels: {
               A: 'Ich nehme soziale Prozesse wahr.',
               B: 'Ich reagiere angemessen auf soziale Dynamiken.',
@@ -115,51 +183,68 @@ export const modules: Module[] = [
       },
       {
         id: 'm2-k2',
-        title: '2.2 Lerngruppen',
+        title: 'K2 Förderbedarf',
         competences: [
           {
             id: 'c2-2',
-            title: 'Gruppenleitung',
-            description: 'Ich leite Lerngruppen professionell.',
+            title: 'Förderbedarf',
+            description: 'Erkennen und Umgang mit Förderbedarf.',
             levels: {
-              A: 'Ich nehme die Lerngruppe als Ganzes wahr.',
-              B: 'Ich gehe auf die Bedürfnisse der Lerngruppe ein.',
-              C: 'Ich steuere Gruppenprozesse zielgerichtet.',
-              D: 'Ich coache Lerngruppen in ihrer Entwicklung.'
+              A: 'Ich erkenne offensichtlichen Förderbedarf.',
+              B: 'Ich leite erste Fördermaßnahmen ein.',
+              C: 'Ich erstelle differenzierte Förderpläne.',
+              D: 'Ich evaluiere Förderkonzepte.'
             }
           }
         ]
       },
       {
         id: 'm2-k3',
-        title: '2.3 Beratung (Erziehung)',
+        title: 'K3 Beratung',
         competences: [
           {
             id: 'c2-3',
-            title: 'Erziehungsberatung',
-            description: 'Ich berate Eltern und Schüler in Erziehungsfragen.',
+            title: 'Beratung',
+            description: 'Beratung in Erziehungsfragen.',
             levels: {
-              A: 'Ich führe einfache Elterngespräche.',
-              B: 'Ich berate bei alltäglichen Erziehungsproblemen.',
-              C: 'Ich führe schwierige Beratungsgespräche lösungsorientiert.',
-              D: 'Ich kooperiere mit außerschulischen Beratungseinrichtungen.'
+              A: 'Ich führe einfache Beratungsgespräche.',
+              B: 'Ich berate bei alltäglichen Problemen.',
+              C: 'Ich führe schwierige Gespräche lösungsorientiert.',
+              D: 'Ich kooperiere mit Beratungseinrichtungen.'
             }
           }
         ]
       },
       {
         id: 'm2-k4',
-        title: '2.4 Werthaltungen',
+        title: 'K4 Werte Normen',
         competences: [
           {
             id: 'c2-4',
-            title: 'Wertevermittlung',
-            description: 'Ich vermittle demokratische Werte und Normen.',
+            title: 'Werte und Normen',
+            description: 'Vermittlung von Werten und Normen.',
             levels: {
-              A: 'Ich kenne die Werte des Grundgesetzes.',
-              B: 'Ich lebe diese Werte im Unterricht vor.',
-              C: 'Ich thematisiere Wertekonflikte im Unterricht.',
-              D: 'Ich initiiere Projekte zur Demokratieerziehung.'
+              A: 'Ich kenne die relevanten Werte und Normen.',
+              B: 'Ich lebe Werte im Unterricht vor.',
+              C: 'Ich thematisiere Wertekonflikte.',
+              D: 'Ich initiiere Projekte zur Werteerziehung.'
+            }
+          }
+        ]
+      },
+      {
+        id: 'm2-k5',
+        title: 'K5 Verantwortung',
+        competences: [
+          {
+            id: 'c2-5',
+            title: 'Verantwortung',
+            description: 'Übernahme von Verantwortung.',
+            levels: {
+              A: 'Ich nehme meine Verantwortung wahr.',
+              B: 'Ich fördere Verantwortungsübernahme bei Schülern.',
+              C: 'Ich übertrage Verantwortung an Schüler.',
+              D: 'Ich entwickle Konzepte zur Verantwortungsförderung.'
             }
           }
         ]
@@ -172,68 +257,102 @@ export const modules: Module[] = [
     subModules: [
       {
         id: 'm3-k1',
-        title: '3.1 Gesprächsführung',
+        title: 'K1 Gesprächsführung',
         competences: [
           {
             id: 'c3-1',
             title: 'Gesprächstechniken',
-            description: 'Ich setze Gesprächstechniken zielgerichtet ein.',
+            description: 'Einsatz von Gesprächstechniken.',
             levels: {
               A: 'Ich kenne grundlegende Gesprächstechniken.',
-              B: 'Ich wende Gesprächstechniken in Übungssituationen an.',
-              C: 'Ich führe Gespräche professionell und zielorientiert.',
-              D: 'Ich leite komplexe Beratungsgespräche souverän.'
+              B: 'Ich wende Gesprächstechniken an.',
+              C: 'Ich führe Gespräche professionell.',
+              D: 'Ich leite komplexe Gespräche souverän.'
             }
           }
         ]
       },
       {
         id: 'm3-k2',
-        title: '3.2 Sprache',
+        title: 'K2 Stimmungen',
         competences: [
           {
             id: 'c3-2',
-            title: 'Sprachvorbild',
-            description: 'Ich bin mir meiner Wirkung als Sprachvorbild bewusst.',
+            title: 'Stimmungen',
+            description: 'Wahrnehmung und Umgang mit Stimmungen.',
             levels: {
-              A: 'Ich drücke mich verständlich aus.',
-              B: 'Ich achte auf fachsprachliche Korrektheit.',
-              C: 'Ich fördere die Sprachkompetenz der Schüler.',
-              D: 'Ich entwickle sprachsensible Unterrichtskonzepte.'
+              A: 'Ich nehme Stimmungen wahr.',
+              B: 'Ich gehe auf Stimmungen ein.',
+              C: 'Ich beeinflusse die Stimmung positiv.',
+              D: 'Ich nutze Stimmungen für Lernprozesse.'
             }
           }
         ]
       },
       {
         id: 'm3-k3',
-        title: '3.3 Medieneinsatz',
+        title: 'K3 Sprache',
         competences: [
           {
             id: 'c3-3',
-            title: 'Medienkompetenz',
-            description: 'Ich setze Medien didaktisch sinnvoll ein.',
+            title: 'Sprache',
+            description: 'Sprachvorbild und Sprachförderung.',
             levels: {
-              A: 'Ich bediene gängige Medien sicher.',
-              B: 'Ich wähle Medien passend zum Lernziel aus.',
-              C: 'Ich leite Schüler zum kritischen Medienumgang an.',
-              D: 'Ich entwickle Medienkonzepte für den Unterricht.'
+              A: 'Ich drücke mich verständlich aus.',
+              B: 'Ich achte auf fachsprachliche Korrektheit.',
+              C: 'Ich fördere die Sprachkompetenz der Schüler.',
+              D: 'Ich entwickle sprachsensible Konzepte.'
             }
           }
         ]
       },
       {
         id: 'm3-k4',
-        title: '3.4 Konflikte',
+        title: 'K4 Medieneinsatz',
         competences: [
           {
             id: 'c3-4',
-            title: 'Konfliktmanagement',
-            description: 'Ich gehe konstruktiv mit Konflikten um.',
+            title: 'Medieneinsatz',
+            description: 'Didaktischer Einsatz von Medien.',
             levels: {
-              A: 'Ich erkenne Konflikte frühzeitig.',
-              B: 'Ich interveniere bei Störungen angemessen.',
-              C: 'Ich vermittle in Konfliktsituationen (Mediation).',
-              D: 'Ich implementiere Konzepte zur Gewaltprävention.'
+              A: 'Ich bediene gängige Medien.',
+              B: 'Ich wähle Medien passend aus.',
+              C: 'Ich leite zum kritischen Medienumgang an.',
+              D: 'Ich entwickle Medienkonzepte.'
+            }
+          }
+        ]
+      },
+      {
+        id: 'm3-k5',
+        title: 'K5 Konflikte',
+        competences: [
+          {
+            id: 'c3-5',
+            title: 'Konflikte',
+            description: 'Umgang mit Konflikten.',
+            levels: {
+              A: 'Ich erkenne Konflikte.',
+              B: 'Ich interveniere angemessen.',
+              C: 'Ich vermittle in Konflikten.',
+              D: 'Ich implementiere Präventionskonzepte.'
+            }
+          }
+        ]
+      },
+      {
+        id: 'm3-k6',
+        title: 'K6 Lernklima',
+        competences: [
+          {
+            id: 'c3-6',
+            title: 'Lernklima',
+            description: 'Gestaltung des Lernklimas.',
+            levels: {
+              A: 'Ich achte auf ein ruhiges Lernklima.',
+              B: 'Ich sorge für eine förderliche Arbeitsatmosphäre.',
+              C: 'Ich schaffe ein motivierendes Lernklima.',
+              D: 'Ich entwickle das Lernklima nachhaltig weiter.'
             }
           }
         ]
@@ -246,16 +365,16 @@ export const modules: Module[] = [
     subModules: [
       {
         id: 'm4-k1',
-        title: '4.1 Kompetenzförderung',
+        title: 'K1 Kompetenz',
         competences: [
           {
             id: 'c4-1',
             title: 'Kompetenzorientierung',
-            description: 'Ich richte meinen Unterricht an Kompetenzen aus.',
+            description: 'Ausrichtung am Kompetenzerwerb.',
             levels: {
-              A: 'Ich kenne die Kompetenzbereiche des Fachs.',
-              B: 'Ich plane Unterrichtsstunden kompetenzorientiert.',
-              C: 'Ich fördere individuelle Kompetenzentwicklungen.',
+              A: 'Ich kenne die Kompetenzbereiche.',
+              B: 'Ich plane kompetenzorientiert.',
+              C: 'Ich fördere individuelle Kompetenzen.',
               D: 'Ich entwickle kompetenzorientierte Curricula.'
             }
           }
@@ -263,51 +382,170 @@ export const modules: Module[] = [
       },
       {
         id: 'm4-k2',
-        title: '4.2 Didaktik',
+        title: 'K2 Didaktik',
         competences: [
           {
             id: 'c4-2',
-            title: 'Unterrichtsplanung',
-            description: 'Ich plane Unterricht fach- und sachgerecht.',
+            title: 'Didaktik',
+            description: 'Didaktische Planung und Durchführung.',
             levels: {
-              A: 'Ich plane einzelne Stunden strukturiert.',
-              B: 'Ich plane Unterrichtsreihen sinnvoll.',
-              C: 'Ich differenziere und individualisiere Lernprozesse.',
-              D: 'Ich evaluiere und optimiere meine Unterrichtsplanung.'
+              A: 'Ich plane Stunden strukturiert.',
+              B: 'Ich begründe didaktische Entscheidungen.',
+              C: 'Ich variiere didaktische Methoden.',
+              D: 'Ich entwickle didaktische Konzepte weiter.'
             }
           }
         ]
       },
       {
         id: 'm4-k3',
-        title: '4.3 Schülerorientierung',
+        title: 'K3 Aufbereitung',
         competences: [
           {
             id: 'c4-3',
-            title: 'Lernvoraussetzungen',
-            description: 'Ich berücksichtige die Lernvoraussetzungen der Schüler.',
+            title: 'Aufbereitung',
+            description: 'Didaktische Aufbereitung von Inhalten.',
             levels: {
-              A: 'Ich nehme die Interessen der Schüler wahr.',
-              B: 'Ich knüpfe an die Lebenswelt der Schüler an.',
-              C: 'Ich beteilige Schüler an der Unterrichtsgestaltung.',
-              D: 'Ich fördere selbstgesteuertes Lernen.'
+              A: 'Ich bereite Inhalte verständlich auf.',
+              B: 'Ich reduziere didaktisch angemessen.',
+              C: 'Ich bereite Inhalte differenziert auf.',
+              D: 'Ich erstelle eigene Lernmaterialien.'
             }
           }
         ]
       },
       {
         id: 'm4-k4',
-        title: '4.4 Fehlerkultur',
+        title: 'K4 Lernumgebung',
         competences: [
           {
             id: 'c4-4',
-            title: 'Umgang mit Fehlern',
-            description: 'Ich nutze Fehler als Lernchance.',
+            title: 'Lernumgebung',
+            description: 'Gestaltung der Lernumgebung.',
+            levels: {
+              A: 'Ich nutze die vorhandene Lernumgebung.',
+              B: 'Ich gestalte die Lernumgebung funktional.',
+              C: 'Ich schaffe eine anregende Lernumgebung.',
+              D: 'Ich entwickle Konzepte zur Raumgestaltung.'
+            }
+          }
+        ]
+      },
+      {
+        id: 'm4-k5',
+        title: 'K5 Vernetzung',
+        competences: [
+          {
+            id: 'c4-5',
+            title: 'Vernetzung',
+            description: 'Vernetzung von Wissen.',
+            levels: {
+              A: 'Ich stelle Bezüge her.',
+              B: 'Ich vernetze Inhalte sinnvoll.',
+              C: 'Ich fördere vernetztes Denken.',
+              D: 'Ich plane fächerübergreifende Projekte.'
+            }
+          }
+        ]
+      },
+      {
+        id: 'm4-k6',
+        title: 'K6 Eröffnung',
+        competences: [
+          {
+            id: 'c4-6',
+            title: 'Eröffnung',
+            description: 'Unterrichtseinstiege gestalten.',
+            levels: {
+              A: 'Ich wähle passende Einstiege.',
+              B: 'Ich motiviere durch Einstiege.',
+              C: 'Ich aktiviere Vorwissen gezielt.',
+              D: 'Ich entwickle innovative Einstiegsszenarien.'
+            }
+          }
+        ]
+      },
+      {
+        id: 'm4-k7',
+        title: 'K7 Fehlerkultur',
+        competences: [
+          {
+            id: 'c4-7',
+            title: 'Fehlerkultur',
+            description: 'Umgang mit Fehlern.',
             levels: {
               A: 'Ich korrigiere Fehler sachlich.',
               B: 'Ich thematisiere Fehlerursachen.',
               C: 'Ich fördere eine positive Fehlerkultur.',
-              D: 'Ich nutze Fehleranalysen zur Unterrichtsentwicklung.'
+              D: 'Ich nutze Fehleranalysen zur Entwicklung.'
+            }
+          }
+        ]
+      },
+      {
+        id: 'm4-k8',
+        title: 'K8 Selbsttätigkeit',
+        competences: [
+          {
+            id: 'c4-8',
+            title: 'Selbsttätigkeit',
+            description: 'Förderung der Selbsttätigkeit.',
+            levels: {
+              A: 'Ich lasse Schüler selbstständig arbeiten.',
+              B: 'Ich leite zu selbstständigem Arbeiten an.',
+              C: 'Ich fördere selbstgesteuerte Lernprozesse.',
+              D: 'Ich ermögliche offene Lernformen.'
+            }
+          }
+        ]
+      },
+      {
+        id: 'm4-k9',
+        title: 'K9 Nachhaltigkeit',
+        competences: [
+          {
+            id: 'c4-9',
+            title: 'Nachhaltigkeit',
+            description: 'Sicherung von Lernergebnissen.',
+            levels: {
+              A: 'Ich sichere Ergebnisse.',
+              B: 'Ich übe und wiederhole sinnvoll.',
+              C: 'Ich fördere nachhaltiges Lernen.',
+              D: 'Ich evaluiere den Lernerfolg langfristig.'
+            }
+          }
+        ]
+      },
+      {
+        id: 'm4-k10',
+        title: 'K10 Evaluation',
+        competences: [
+          {
+            id: 'c4-10',
+            title: 'Evaluation',
+            description: 'Evaluation von Unterricht.',
+            levels: {
+              A: 'Ich hole Feedback ein.',
+              B: 'Ich reflektiere meinen Unterricht.',
+              C: 'Ich nutze Evaluationsergebnisse zur Verbesserung.',
+              D: 'Ich etabliere Feedbackkulturen.'
+            }
+          }
+        ]
+      },
+      {
+        id: 'm4-k11',
+        title: 'K11 Differenzierung',
+        competences: [
+          {
+            id: 'c4-11',
+            title: 'Differenzierung',
+            description: 'Umgang mit Heterogenität.',
+            levels: {
+              A: 'Ich erkenne Unterschiede.',
+              B: 'Ich differenziere Aufgaben.',
+              C: 'Ich individualisiere Lernwege.',
+              D: 'Ich entwickle inklusive Unterrichtskonzepte.'
             }
           }
         ]
@@ -320,68 +558,68 @@ export const modules: Module[] = [
     subModules: [
       {
         id: 'm5-k1',
-        title: '5.1 Diagnostizieren',
+        title: 'K1 Diagnostizieren',
         competences: [
           {
             id: 'c5-1',
-            title: 'Lernstandserhebung',
-            description: 'Ich diagnostiziere Lernvoraussetzungen und Lernprozesse.',
+            title: 'Diagnostizieren',
+            description: 'Diagnose von Lernvoraussetzungen.',
             levels: {
               A: 'Ich nutze einfache Diagnoseinstrumente.',
-              B: 'Ich leite Fördermaßnahmen aus Diagnosen ab.',
+              B: 'Ich leite Maßnahmen aus Diagnosen ab.',
               C: 'Ich setze vielfältige Diagnoseverfahren ein.',
-              D: 'Ich entwickle Diagnosekonzepte für die Schule.'
+              D: 'Ich entwickle Diagnosekonzepte.'
             }
           }
         ]
       },
       {
         id: 'm5-k2',
-        title: '5.2 Fördern',
+        title: 'K2 Fördern',
         competences: [
           {
             id: 'c5-2',
-            title: 'Individuelle Förderung',
-            description: 'Ich fördere Schülerinnen und Schüler individuell.',
+            title: 'Fördern',
+            description: 'Individuelle Förderung.',
             levels: {
               A: 'Ich erkenne Förderbedarf.',
-              B: 'Ich erstelle einfache Förderpläne.',
-              C: 'Ich setze Binnendifferenzierung gezielt ein.',
-              D: 'Ich evaluiere die Wirksamkeit von Fördermaßnahmen.'
+              B: 'Ich erstelle Förderpläne.',
+              C: 'Ich fördere individuell und differenziert.',
+              D: 'Ich evaluiere Fördermaßnahmen.'
             }
           }
         ]
       },
       {
         id: 'm5-k3',
-        title: '5.3 Beraten',
+        title: 'K3 Beraten',
         competences: [
           {
             id: 'c5-3',
-            title: 'Beratungskompetenz',
-            description: 'Ich berate Schüler und Eltern professionell.',
+            title: 'Beraten',
+            description: 'Beratung von Schülern und Eltern.',
             levels: {
-              A: 'Ich informiere über Leistungsstände.',
-              B: 'Ich führe Beratungsgespräche strukturiert.',
-              C: 'Ich berate lösungsorientiert bei Lernschwierigkeiten.',
-              D: 'Ich koordiniere das Beratungsnetzwerk der Schule.'
+              A: 'Ich informiere über Leistungen.',
+              B: 'Ich berate strukturiert.',
+              C: 'Ich berate lösungsorientiert.',
+              D: 'Ich koordiniere Beratungsnetzwerke.'
             }
           }
         ]
       },
       {
         id: 'm5-k4',
-        title: '5.4 Bewerten',
+        title: 'K4 Bewerten',
         competences: [
           {
             id: 'c5-4',
-            title: 'Leistungsbewertung',
-            description: 'Ich bewerte Schülerleistungen transparent und gerecht.',
+            title: 'Bewerten',
+            description: 'Leistungsbewertung.',
             levels: {
-              A: 'Ich kenne die Bewertungsgrundsätze.',
-              B: 'Ich mache Bewertungskriterien transparent.',
-              C: 'Ich nutze vielfältige Formen der Leistungsmessung.',
-              D: 'Ich entwickle Konzepte zur Leistungsmessung weiter.'
+              A: 'Ich kenne Bewertungsgrundsätze.',
+              B: 'Ich bewerte transparent.',
+              C: 'Ich nutze vielfältige Bewertungsformen.',
+              D: 'Ich entwickle Bewertungskonzepte weiter.'
             }
           }
         ]
